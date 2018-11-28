@@ -1,0 +1,32 @@
+{
+		"name": "voting-system",
+		"version": "0.0.0",
+		"private": true,
+		"scripts": {
+				"start": "node app.js",
+				"start-eclipse": "node ./bin/www",
+				"start-dev": "nodemon app.js"
+		},
+		"devDependencies": {
+				"nodemon": "^1.18.3"
+		},
+		"dependencies": {
+				"alert-node": "^1.2.2",
+				"async": "^2.6.0",
+				"bcrypt": "^3.0.2",
+				"body-parser": "~1.18.2",
+				"compression": "^1.7.3",
+				"cookie-parser": "~1.4.3",
+				"debug": "~2.6.9",
+				"dotenv":"^6.1.0",
+				"express": "~4.16.2",
+				"express-session": "^1.7.6",
+				"express-validator": "^4.3.0",
+				"helmet": "^3.10.0",
+				"morgan": "~1.9.0",
+				"mysql": "^2.13.0",
+				"nodemailer": "^4.7.0",
+				"pug": "~2.0.0-rc.4",
+				"serve-favicon": "~2.4.5"
+		}
+}
