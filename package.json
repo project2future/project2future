@@ -3,7 +3,7 @@
 		"version": "0.0.0",
 		"private": true,
 		"scripts": {
-				"start": "NODE_ENV=production MYSQL_USERNAME=root MYSQL_PASSWORD=root DEFAULT_DATABASE=projec62_project2future node app.js",
+				"start": "NODE_ENV=production MYSQL_USERNAME=proje_root MYSQL_PASSWORD=Root@2019 DEFAULT_DATABASE=projec62_project2future node app.js",
 				"start-eclipse": "node ./bin/www",
 				"start-dev": "nodemon app.js"
 		},
