@@ -10,7 +10,7 @@ const session = require('express-session');
 const helmet = require('helmet');
 const compression = require('compression');
 
-const debug = require('debug')('voting-system:server');
+//const debug = require('debug')('voting-system:server');
 const votingRouter = require('./routes/votingSystem');
 const logStream = fs.createWriteStream(path.join(__dirname,'access.log'),{flags:'a'});
 
@@ -126,7 +126,7 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
-  debug('Listening on ' + bind);
+  //debug('Listening on ' + bind);
 }
 
 module.exports = app;
