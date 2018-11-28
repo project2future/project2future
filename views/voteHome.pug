@@ -1,0 +1,47 @@
+extends layout
+
+block content
+	.main.container
+		nav.navbar.navbar-default
+			.container-fluid
+				.navbar-header
+					button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand(href='#') Voting System
+				#navbar.navbar-collapse.collapse
+					ul.nav.navbar-nav.navbar-right
+						li
+							a(href='/logout') Sign Out
+		.row.panel.panel-default.col-lg-6.col-md-offset-2
+			.row.panel-heading
+				.col-md-6.col-md-offset-5
+					h4.display-4.panel-title Select Your Candidate
+			.row.panel-body
+				.col-md-6.col-md-offset-3
+					form.form-horizontal(method='POST' action='/vote')
+						div.form-group
+							.col-md-6
+								label(for='candidate_1') Candidate 1
+							.col-md-6
+								input(type='radio' id='candidate_1' value='candidate_1' name='vote')
+						div.form-group
+							.col-md-6
+								label(for='candidate_2') Candidate 2
+							.col-md-6
+								input(type='radio' id='candidate_2' value='candidate_2' name='vote')
+						div.form-group
+							.col-md-6
+								label(for='candidate_3') Candidate 3
+							.col-md-6
+								input(type='radio' id='candidate_3' value='candidate_3' name='vote')
+						div.form-group
+							.col-md-6
+								label(for='candidate_4') Candidate 4
+							.col-md-6
+								input(type='radio' id='candidate_4' value='candidate_4' name='vote')
+						.row.pt-5
+							.col-md-6.col-md-offset-5.pt-5 
+								button.btn.btn-primary(type='submit') Vote

@@ -1,0 +1,9 @@
+{
+    "env": {
+        "MYSQL_HOST": "localhost",
+        "MYSQL_USERNAME": "root",
+        "MYSQL_PASSWORD": "root",
+        "DEFAULT_DATABSE": "voting_system",
+        "PORT":3000
+    }
+}
